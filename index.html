@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#3a38f0" />
+    <title>Dosagem</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <header><h1>Dosagem</h1></header>
+    <main>
+      <div id="container">
+        <div class="item">
+          <label for="peso">Peso das roupas: </label
+          ><input
+            type="number"
+            name="peso"
+            id="peso"
+            placeholder="digite em gramas"
+          />
+        </div>
+        <div class="item">
+          <label>Carga: </label
+          ><label class="radio-opcao">
+            <input type="radio" checked name="tipo" value="regular" />
+            <span class="seletor"></span>
+            regular
+          </label>
+
+          <label class="radio-opcao">
+            <input type="radio" name="tipo" value="pesada" />
+            <span class="seletor"></span>
+            pesada
+          </label>
+        </div>
+        <div class="item">
+          <button type="submit" id="button">Calcular</button>
+        </div>
+        <div class="item"><span id="resultado"></span></div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
